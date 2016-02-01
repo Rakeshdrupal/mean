@@ -28,7 +28,8 @@ Authorization');
 
 app.use(morgan('dev'));
 // connect to our database
-mongoose.connect('mongodb://localhost:27017/crm');
+//mongoose.connect('mongodb://localhost:27017/crm');
+mongoose.connect('mongodb://ds055575.mongolab.com:55575/heroku_1bf8c4jb');
 
 // basic route for the home page
 app.get('/', function (req, res) {
